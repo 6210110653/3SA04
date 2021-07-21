@@ -39,15 +39,6 @@ export default function Weather(props) {
     )
 }
 
-/*const styles = StyleSheet.create({
-    backdrop: {
-        alignItems: 'center',
-        width: '100%',
-        height: '100%'
-        },
-       
-})*/
-
 const styles = StyleSheet.create({    //กำหนด backdrop style 
     backdrop: {
         flexDirection: 'column',
