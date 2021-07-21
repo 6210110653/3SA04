@@ -30,18 +30,36 @@ export default function Weather(props) {
     
     return (
         <ImageBackground source={require('../bg.jpg')} style={styles.backdrop}>
-            <Text>Zip Code</Text>
-            <Text>{props.zipCode}</Text>
+            <Text style = {styles.BText}>Zip Code</Text>
+            <Text style = {styles.BText}>{props.zipCode}</Text>
             <Forecast {...ForecastInfo} />
         </ImageBackground>
     )
 }
 
-const styles = StyleSheet.create({
+/*const styles = StyleSheet.create({
     backdrop: {
         alignItems: 'center',
         width: '100%',
         height: '100%'
         },
        
+})*/
+
+const styles = StyleSheet.create({    //กำหนด backdrop style 
+    backdrop: {
+        flexDirection: 'column',
+        width: '100%',
+        height:'100%'
+    },
+    BText: {
+        fontSize: 40 //กำหนดขนาดตัวอักษร
+    },
+    BBlack:{
+        justifyContent: 'center', //center แนวแกนตั้ง
+        alignItems: 'center', //center แนวแกนนอน
+        backgroundColor: 'rgba(0,0,0,0.3)',
+        height:'50%',
+        width:'100%'
+    }
 })
