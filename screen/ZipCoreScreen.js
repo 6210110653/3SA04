@@ -8,6 +8,8 @@ const availableZipItems = [
     { place: 'Chiangmai', code: '50000' },
     { place: 'Khonkaen', code: '40000' },
     { place: 'Chonburi', code: '20000' },
+    { place: 'Yala', code: '95000' },
+    { place: 'Kanchanaburi', code: '71110' },
 ]
 
 const ZipItem = ({place, code, navigation}) => (
@@ -37,7 +39,7 @@ const styles = StyleSheet.create({
     zipItem: {
         flex: 1,
         flexDirection: 'row',
-        justifyContent: 'space-between'
+        justifyContent: 'space-between',
     },
     backdrop: {
         flexDirection: 'column',
