@@ -40,6 +40,8 @@ const styles = StyleSheet.create({
         flex: 1,
         flexDirection: 'row',
         justifyContent: 'space-between',
+        height: '100%',
+        backgroundColor: '#e6e6fa',
     },
     backdrop: {
         flexDirection: 'column',
